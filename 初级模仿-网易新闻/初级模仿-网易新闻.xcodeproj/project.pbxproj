@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8E38691A839F24E24D83410B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E98423B3723F113289CDB5 /* libPods.a */; };
+		E826F4401C92947C004F1723 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F43F1C92947C004F1723 /* NewsDetailViewController.m */; };
+		E826F4431C92AF5D004F1723 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F4421C92AF5D004F1723 /* HttpManager.m */; };
+		E826F4461C92B193004F1723 /* NewsDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F4451C92B193004F1723 /* NewsDetailsModel.m */; };
+		E826F4491C92B30A004F1723 /* NewsDetailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F4481C92B30A004F1723 /* NewsDetailImage.m */; };
 		E872BD781C91663F00C0AE50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E872BD771C91663F00C0AE50 /* main.m */; };
 		E872BD7B1C91663F00C0AE50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E872BD7A1C91663F00C0AE50 /* AppDelegate.m */; };
 		E872BD831C91663F00C0AE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E872BD821C91663F00C0AE50 /* Assets.xcassets */; };
@@ -22,6 +26,14 @@
 		64E98423B3723F113289CDB5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7189B2E0EC50568D0719995F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9CD79DEE9BD29DB7F995E5E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E826F43E1C92947C004F1723 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		E826F43F1C92947C004F1723 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		E826F4411C92AF5D004F1723 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		E826F4421C92AF5D004F1723 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		E826F4441C92B193004F1723 /* NewsDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailsModel.h; sourceTree = "<group>"; };
+		E826F4451C92B193004F1723 /* NewsDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsModel.m; sourceTree = "<group>"; };
+		E826F4471C92B30A004F1723 /* NewsDetailImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailImage.h; sourceTree = "<group>"; };
+		E826F4481C92B30A004F1723 /* NewsDetailImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailImage.m; sourceTree = "<group>"; };
 		E872BD731C91663E00C0AE50 /* 初级模仿-网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "初级模仿-网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E872BD771C91663F00C0AE50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E872BD791C91663F00C0AE50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +135,8 @@
 			children = (
 				E872BD9C1C91750400C0AE50 /* NewNotesListViewController.h */,
 				E872BD9D1C91750400C0AE50 /* NewNotesListViewController.m */,
+				E826F43E1C92947C004F1723 /* NewsDetailViewController.h */,
+				E826F43F1C92947C004F1723 /* NewsDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +146,10 @@
 			children = (
 				E872BDA21C9187DC00C0AE50 /* NewsModel.h */,
 				E872BDA31C9187DC00C0AE50 /* NewsModel.m */,
+				E826F4441C92B193004F1723 /* NewsDetailsModel.h */,
+				E826F4451C92B193004F1723 /* NewsDetailsModel.m */,
+				E826F4471C92B30A004F1723 /* NewsDetailImage.h */,
+				E826F4481C92B30A004F1723 /* NewsDetailImage.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +157,8 @@
 		E872BD921C91678500C0AE50 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				E826F4411C92AF5D004F1723 /* HttpManager.h */,
+				E826F4421C92AF5D004F1723 /* HttpManager.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -283,9 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E872BDA41C9187DC00C0AE50 /* NewsModel.m in Sources */,
+				E826F4461C92B193004F1723 /* NewsDetailsModel.m in Sources */,
 				E872BD7B1C91663F00C0AE50 /* AppDelegate.m in Sources */,
 				E872BD9E1C91750400C0AE50 /* NewNotesListViewController.m in Sources */,
+				E826F4431C92AF5D004F1723 /* HttpManager.m in Sources */,
 				E872BDA11C91770900C0AE50 /* NewListCell.m in Sources */,
+				E826F4401C92947C004F1723 /* NewsDetailViewController.m in Sources */,
+				E826F4491C92B30A004F1723 /* NewsDetailImage.m in Sources */,
 				E872BD781C91663F00C0AE50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

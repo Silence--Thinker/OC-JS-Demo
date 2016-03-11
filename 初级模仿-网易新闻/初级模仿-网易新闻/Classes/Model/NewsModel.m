@@ -13,9 +13,12 @@
 + (instancetype)newModelWithDictionary:(NSDictionary *)dict {
     NewsModel *newsM = [NewsModel new];
     
-    newsM.title = [dict objectForKey:@""];
+    newsM.title = [dict objectForKey:@"title"];
     newsM.digest = [dict objectForKey:@"digest"];
     newsM.imgsrc = [dict objectForKey:@"imgsrc"];
+    newsM.url = [dict objectForKey:@"url"];
+    newsM.url_3w = [dict objectForKey:@"url_3w"];
+    newsM.docid = [dict objectForKey:@"docid"];
     return newsM;
 }
 @end

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>9IG74V5H00963VRO_BHS6H1JVbjjinshuupdateDoc</key>
+	<dict>
+		<key>apps</key>
+		<array/>
+		<key>boboList</key>
+		<array/>
+		<key>body</key>
+		<string>&lt;p&gt;　　您的新闻客户端版本太低啦，升级之后就能看到更丰富的新闻形式了！&lt;/p&gt;&lt;p&gt;　　&lt;!--link0--&gt;&amp;gt;&amp;gt;安卓用户点这里升级&lt;/p&gt;&lt;p&gt;　　&lt;!--link1--&gt;&amp;gt;&amp;gt;苹果手机用户点这里升级&lt;/p&gt;&lt;p&gt;　　Windows Phone和Win8/Win10客户端暂不支持从新闻列表中直接进入图集、视频、直播室，iPad客户端暂不支持从新闻列表中直接进入视频，敬请期待！&lt;/p&gt;</string>
+		<key>digest</key>
+		<string></string>
+		<key>dkeys</key>
+		<string>版本过低</string>
+		<key>docid</key>
+		<string>9IG74V5H00963VRO</string>
+		<key>hasNext</key>
+		<false/>
+		<key>img</key>
+		<array/>
+		<key>link</key>
+		<array>
+			<dict>
+				<key>href</key>
+				<string>http://3g.163.com/links/4304</string>
+				<key>ref</key>
+				<string>&lt;!--link0--&gt;&amp;gt;&amp;gt;安卓用户点这里升级</string>
+				<key>title</key>
+				<string>&amp;gt;&amp;gt;安卓用户点这里升级</string>
+			</dict>
+			<dict>
+				<key>href</key>
+				<string>http://3g.163.com/links/3615</string>
+				<key>ref</key>
+				<string>&lt;!--link1--&gt;&amp;gt;&amp;gt;苹果手机用户点这里升级</string>
+				<key>title</key>
+				<string>&amp;gt;&amp;gt;苹果手机用户点这里升级</string>
+			</dict>
+		</array>
+		<key>picnews</key>
+		<true/>
+		<key>ptime</key>
+		<string>2014-01-13 18:36:12</string>
+		<key>relative_sys</key>
+		<array/>
+		<key>replyCount</key>
+		<integer>0</integer>
+		<key>source</key>
+		<string>网易新闻客户端</string>
+		<key>template</key>
+		<string>normal</string>
+		<key>threadAgainst</key>
+		<integer>0</integer>
+		<key>threadVote</key>
+		<integer>0</integer>
+		<key>tid</key>
+		<string></string>
+		<key>title</key>
+		<string>您的客户端版本需要升级</string>
+		<key>topiclist</key>
+		<array/>
+		<key>topiclist_news</key>
+		<array/>
+		<key>users</key>
+		<array/>
+		<key>voicecomment</key>
+		<string>off</string>
+		<key>votes</key>
+		<array/>
+		<key>ydbaike</key>
+		<array/>
+	</dict>
+</dict>
+</plist>

@@ -5,40 +5,60 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--新闻页面-->
+        <!--新闻-->
         <scene sceneID="7jA-FY-aAY">
             <objects>
                 <tableViewController id="DVP-LC-slh" customClass="NewNotesListViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" id="XKj-XH-5a2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="XKj-XH-5a2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewListCell" focusStyle="custom" rowHeight="291" id="GwL-M5-rSO" customClass="NewListCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="291"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewListCell" focusStyle="custom" rowHeight="80" id="GwL-M5-rSO" customClass="NewListCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GwL-M5-rSO" id="0DI-w9-rij">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="290"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y4-Cm-Wrd">
-                                            <rect key="frame" x="190" y="105" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y4-Cm-Wrd">
+                                            <rect key="frame" x="120" y="10" width="40" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aL-OC-9tT">
-                                            <rect key="frame" x="190" y="185" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGi-GT-sB0">
-                                            <rect key="frame" x="22" y="84" width="120" height="77"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VGi-GT-sB0">
+                                            <rect key="frame" x="20" y="10" width="80" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="O4f-Vz-God"/>
+                                                <constraint firstAttribute="height" constant="60" id="iOH-0s-Qf2"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="31" translatesAutoresizingMaskIntoConstraints="NO" id="6aL-OC-9tT">
+                                            <rect key="frame" x="120" y="35" width="31" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="1y4-Cm-Wrd" firstAttribute="leading" secondItem="6aL-OC-9tT" secondAttribute="leading" id="1W0-bO-YfF"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1y4-Cm-Wrd" secondAttribute="trailing" constant="15" id="3IE-rE-t1G"/>
+                                        <constraint firstItem="VGi-GT-sB0" firstAttribute="leading" secondItem="0DI-w9-rij" secondAttribute="leading" constant="20" id="H5J-OM-zPl"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6aL-OC-9tT" secondAttribute="trailing" constant="15" id="Jmk-qX-k0b"/>
+                                        <constraint firstItem="1y4-Cm-Wrd" firstAttribute="top" secondItem="VGi-GT-sB0" secondAttribute="top" id="LOr-Jo-3Di"/>
+                                        <constraint firstItem="1y4-Cm-Wrd" firstAttribute="leading" secondItem="VGi-GT-sB0" secondAttribute="trailing" constant="20" id="Zzx-1i-RRq"/>
+                                        <constraint firstItem="VGi-GT-sB0" firstAttribute="centerY" secondItem="0DI-w9-rij" secondAttribute="centerY" id="fPJ-1U-4rX"/>
+                                        <constraint firstItem="6aL-OC-9tT" firstAttribute="top" secondItem="1y4-Cm-Wrd" secondAttribute="bottom" constant="5" id="kA4-Bk-r2P"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="newsDigest" destination="6aL-OC-9tT" id="e5i-3a-Kcb"/>
+                                    <outlet property="newsTitle" destination="1y4-Cm-Wrd" id="duE-3b-7If"/>
+                                    <outlet property="pictureView" destination="VGi-GT-sB0" id="FpQ-Ky-iYb"/>
+                                    <segue destination="rzJ-81-mII" kind="show" id="yfa-Rf-aYi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,11 +66,44 @@
                             <outlet property="delegate" destination="DVP-LC-slh" id="nxG-BX-mvr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="新闻页面" id="wOL-GB-NCM"/>
+                    <navigationItem key="navigationItem" title="新闻" id="wOL-GB-NCM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSl-uS-Nsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1580" y="454"/>
+        </scene>
+        <!--新闻详情-->
+        <scene sceneID="OTu-Pj-YHJ">
+            <objects>
+                <viewController title="新闻详情" id="rzJ-81-mII" customClass="NewsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EpG-sO-dog"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bT-tC-9t9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WC0-RY-C0d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx6-9L-0Ye">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lx6-9L-0Ye" secondAttribute="trailing" id="bwf-Gu-vSt"/>
+                            <constraint firstItem="Lx6-9L-0Ye" firstAttribute="leading" secondItem="WC0-RY-C0d" secondAttribute="leading" id="ccV-NH-J2h"/>
+                            <constraint firstItem="Lx6-9L-0Ye" firstAttribute="top" secondItem="WC0-RY-C0d" secondAttribute="top" id="nhq-gR-GKd"/>
+                            <constraint firstItem="3bT-tC-9t9" firstAttribute="top" secondItem="Lx6-9L-0Ye" secondAttribute="bottom" id="ykk-Ce-ZXF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Lx6-9L-0Ye" id="o8f-c5-KQt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ru7-8g-fe5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267" y="449"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bmu-o4-GMo">

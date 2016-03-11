@@ -19,15 +19,15 @@
 @implementation NewListCell
 
 - (void)awakeFromNib {
-
+    [self.newsDigest setPreferredMaxLayoutWidth:[UIScreen mainScreen].bounds.size.width - 135];
 }
-
 
 - (void)setNewsM:(NewsModel *)newsM {
     _newsM = newsM;
-    [self.pictureView sd_setImageWithURL:newsM.imgsrc];
-    self.newsTitle = newsM.title;
-    self.newsDigest = newsM.digest;
+    NSURL *imageURlL = [NSURL URLWithString:newsM.imgsrc];
+    [self.pictureView sd_setImageWithURL:imageURlL];
+    self.newsTitle.text = newsM.title;
+    self.newsDigest.text = newsM.digest;
     
 }
 @end

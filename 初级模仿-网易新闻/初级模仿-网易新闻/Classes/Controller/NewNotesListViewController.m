@@ -9,8 +9,8 @@
 #import "NewNotesListViewController.h"
 #import "NewListCell.h"
 #import "NewsModel.h"
-#import <AFNetworking.h>
-
+#import "HttpManager.h"
+#import "NewsDetailViewController.h"
 
 static NSString * const kNewListCell = @"NewListCell";
 
@@ -23,6 +23,7 @@ static NSString * const kNewListCell = @"NewListCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.rowHeight = 90.0;
     [self configTableView:^(NSArray *resultArray) {
         self.newsNoteList = resultArray;
         [self.tableView reloadData];
@@ -30,15 +31,14 @@ static NSString * const kNewListCell = @"NewListCell";
 }
 
 - (void)configTableView:(void(^)(NSArray *resultArray))config {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    NSSet *set = manager.responseSerializer.acceptableContentTypes;
-    NSMutableSet *newSet = [NSMutableSet setWithSet:set];
-    [newSet addObject:@"text/html"];
-    manager.responseSerializer.acceptableContentTypes = newSet;
     
-    [manager GET:@"http://c.m.163.com/nc/article/headline/T1348647853363/0-20.html?" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//    http://c.m.163.com/nc/article/headline/T1348647853363/0-20.html? key:T1348647853363
+//    http://c.3g.163.com/recommend/getSubDocPic?passport=&devId=t key:推荐
+//    http://c.m.163.com/nc/article/list/T1348648517839/0-20.html key:T1348648517839
+    
+    [[HttpManager manager] GET:@"http://c.m.163.com/nc/article/list/T1348648517839/0-20.html" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDict = responseObject;
-        NSArray *array = [resultDict objectForKey:@"T1348647853363"];
+        NSArray *array = [resultDict objectForKey:@"T1348648517839"];
         NSMutableArray *tempM = @[].mutableCopy;
         for (NSDictionary *dict in array) {
             [tempM addObject:[NewsModel newModelWithDictionary:dict]];
@@ -60,5 +60,11 @@ static NSString * const kNewListCell = @"NewListCell";
     NewListCell * cell = [tableView dequeueReusableCellWithIdentifier:kNewListCell];
     cell.newsM = self.newsNoteList[indexPath.row];
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NewsDetailViewController *newsDetail = segue.destinationViewController;
+    NSInteger row = self.tableView.indexPathForSelectedRow.row;
+    newsDetail.newsModel = self.newsNoteList[row];
 }
 @end
