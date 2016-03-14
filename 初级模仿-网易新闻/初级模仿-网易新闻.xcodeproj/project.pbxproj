@@ -12,6 +12,7 @@
 		E826F4431C92AF5D004F1723 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F4421C92AF5D004F1723 /* HttpManager.m */; };
 		E826F4461C92B193004F1723 /* NewsDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F4451C92B193004F1723 /* NewsDetailsModel.m */; };
 		E826F4491C92B30A004F1723 /* NewsDetailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E826F4481C92B30A004F1723 /* NewsDetailImage.m */; };
+		E8368FDA1C9663BB005DCD6F /* XJDetail.css in Resources */ = {isa = PBXBuildFile; fileRef = E8368FD91C9663BB005DCD6F /* XJDetail.css */; };
 		E872BD781C91663F00C0AE50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E872BD771C91663F00C0AE50 /* main.m */; };
 		E872BD7B1C91663F00C0AE50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E872BD7A1C91663F00C0AE50 /* AppDelegate.m */; };
 		E872BD831C91663F00C0AE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E872BD821C91663F00C0AE50 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		E826F4451C92B193004F1723 /* NewsDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsModel.m; sourceTree = "<group>"; };
 		E826F4471C92B30A004F1723 /* NewsDetailImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailImage.h; sourceTree = "<group>"; };
 		E826F4481C92B30A004F1723 /* NewsDetailImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailImage.m; sourceTree = "<group>"; };
+		E8368FD91C9663BB005DCD6F /* XJDetail.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = XJDetail.css; sourceTree = "<group>"; };
 		E872BD731C91663E00C0AE50 /* 初级模仿-网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "初级模仿-网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E872BD771C91663F00C0AE50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E872BD791C91663F00C0AE50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				E826F4411C92AF5D004F1723 /* HttpManager.h */,
 				E826F4421C92AF5D004F1723 /* HttpManager.m */,
+				E8368FD91C9663BB005DCD6F /* XJDetail.css */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8368FDA1C9663BB005DCD6F /* XJDetail.css in Resources */,
 				E872BD9B1C91726200C0AE50 /* Launch Screen.storyboard in Resources */,
 				E872BD991C91678500C0AE50 /* Main.storyboard in Resources */,
 				E872BD831C91663F00C0AE50 /* Assets.xcassets in Resources */,
